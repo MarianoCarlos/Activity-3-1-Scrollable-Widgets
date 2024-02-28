@@ -7,9 +7,16 @@ void main() {
   runApp(const Fooderlich());
 }
 
-class Fooderlich extends StatelessWidget {
+class Fooderlich extends StatefulWidget {
   const Fooderlich({super.key});
+
   @override
+  State<Fooderlich> createState() => _FooderlichState();
+}
+
+class _FooderlichState extends State<Fooderlich> {
+  @override
+  
   Widget build(BuildContext context) {
     final theme = FooderlichTheme.dark();
     return MaterialApp(
